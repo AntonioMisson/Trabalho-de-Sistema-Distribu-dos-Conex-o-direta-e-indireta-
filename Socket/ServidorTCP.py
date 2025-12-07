@@ -7,12 +7,12 @@ import tempfile
 
 HOST = "127.0.0.1"
 PORT = 5000
-DB_FILE = "Mensagem.json"
+DB_FILE = "Socket/Mensagem.json"
 
 # ------------------------------------------------------------
 # Configs
 # ------------------------------------------------------------
-MAX_MSG_SIZE = 16 * 1024  # 16 KB por mensagem (proteção contra payloads enormes)
+MAX_MSG_SIZE = 16 * 1024  
 
 # Lock para proteger acesso concorrente ao db
 db_lock = threading.Lock()
