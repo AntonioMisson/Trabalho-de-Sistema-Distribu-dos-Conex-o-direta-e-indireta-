@@ -200,11 +200,6 @@ def handle_list_vehicles(payload):
 # Processador de mensagens com proteção extra
 # ------------------------------------------------------------
 def process_request(req):
-    # Remova ou comente prints de debug em produção
-    # print("=== DEBUG: process_request ===")
-    # print("REQ recebido:", req)
-    # print("DB atual:", db)
-    # print("==============================")
 
     if not isinstance(req, dict):
         return {"error": "Requisição deve ser um objeto JSON"}
@@ -243,7 +238,7 @@ def handle_client(conn, addr):
     log(f"Cliente conectado: {addr}")
     buffer = ""
 
-    # opcional: definir timeout para recv (evita bloqueio indefinido)
+   
     conn.settimeout(300)  # 5 minutos
 
     try:
