@@ -7,7 +7,7 @@ import tempfile
 
 HOST = "127.0.0.1"
 PORT = 5000
-DB_FILE = "Socket/Mensagem.json"
+DB_FILE = "Mensagem.json"
 
 # ------------------------------------------------------------
 # Configs
